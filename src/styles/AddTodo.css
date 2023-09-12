@@ -1,0 +1,104 @@
+.add-todo_container {
+  width: 25rem;
+  margin: 5rem auto 0 auto;
+  background-color: rgb(245, 157, 245);
+  box-shadow: 0 1px 4px rgba(131, 131, 131, 0.3),
+    0 1px 12px 2px rgba(95, 94, 94, 0.3);
+
+  padding: 0.8rem;
+}
+
+.todo_input {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.add-todo_btn {
+  display: flex;
+  justify-content: center;
+}
+
+.add-todo_btn button {
+  background-color: rgb(35, 35, 61);
+  padding: 0.8rem;
+  color: #fff;
+  border-radius: 7px;
+  border: 1px solid whitesmoke;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+}
+
+.add-todo_btn button:hover {
+  background-color: rgba(36, 36, 172, 0.749);
+  transition: all 0.6s;
+}
+
+.todo_input label {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.todo_input input {
+  padding: 0.5rem;
+  border-radius: 7px;
+  border: 1px solid #000;
+  font-size: 1rem;
+}
+
+.todo_input input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.todo_input:last-child {
+  margin-left: 0.5rem;
+}
+
+.todo__actions {
+  display: flex;
+  justify-content: right;
+  margin-top: 0.8rem;
+}
+
+.todo__actions button {
+  background-color: rgb(35, 35, 61);
+  padding: 0.8rem;
+  color: #fff;
+  border-radius: 7px;
+  border: 1px solid whitesmoke;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+}
+
+.todo__actions button:first-child {
+  margin-right: 0.5rem;
+}
+
+.todo__actions button:hover {
+  background-color: rgba(36, 36, 172, 0.749);
+  transition: all 0.6s;
+}
+
+@media (max-width: 460px) {
+  .add-todo_container {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .add-todo_container {
+    width: 17rem;
+  }
+}
+
+@media (max-width: 330px) {
+  .add-todo_container {
+    width: 14rem;
+  }
+}
